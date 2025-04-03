@@ -1,0 +1,120 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    background-image: url('https://source.unsplash.com/1600x900/?weather'); /* Dynamic background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  h1#heading {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin: 20px 0;
+    width: 80%;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  input[type="button"] {
+    padding: 10px 20px;
+    background-color: #ffd700;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="button"]:hover {
+    background-color: #ffcc00;
+  }
+  
+  .result {
+    margin-top: 20px;
+  }
+  
+  h2#city-name {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  h1#weather-type {
+    font-size: 1.8em;
+    color: #ddd;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 1.4em;
+    margin: 5px 0;
+  }
+  
+  #weather-icon {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .container {
+      width: 90%;
+    }
+  
+    input[type="text"] {
+      width: 100%;
+    }
+  
+    h1#heading {
+      font-size: 2.5em;
+    }
+  
+    h2#city-name {
+      font-size: 1.5em;
+    }
+  
+    h1#weather-type {
+      font-size: 1.5em;
+    }
+  
+    h3 {
+      font-size: 1.2em;
+    }
+  }
+  
